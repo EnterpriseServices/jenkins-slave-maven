@@ -42,7 +42,7 @@ RUN set -x \
 # install maven
 
 ARG MAVEN_VERSION=3.3.9
-ARG USER_HOME_DIR="/root"
+ARG USER_HOME_DIR="/home/jenkins"
 
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz \
