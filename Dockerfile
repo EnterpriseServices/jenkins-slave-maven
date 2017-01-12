@@ -1,6 +1,8 @@
 FROM evarga/jenkins-slave:latest
 MAINTAINER navinlab
 
+RUN usermod -aG sudo jenkins && echo "%sudo ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
 # install openjdk
 
 # A few problems with compiling Java from source:
